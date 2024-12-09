@@ -1,0 +1,139 @@
+body {
+    font-family: Arial;
+    color: black;
+    margin: 20px;
+    background-color: #f4f4f4;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    border-radius: 30px;
+    color: #fff;
+}
+
+.label1 {
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.button {
+    border-radius: 30px; 
+    height: 40px; 
+    width: 150px; 
+    background-color: #333; 
+    color: #fff; 
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+.navbar .logo {
+    width: 50px
+}
+
+.navbar .nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 5px 10px;
+}
+
+.navbar .nav-links a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+.user-list h1 {
+    text-align: center; 
+}
+
+.user-list table{
+    margin: auto;
+    text-align: center;
+}
+
+.user-list th, .user-list td {
+    border: 1px solid black; 
+    padding: 10px; 
+}
+
+
+.imagen1 {
+    width: 400px;
+    height: 500px;
+    border-radius: 10px; 
+}
+
+.imagen2 {
+    width: 400px;
+    height: 500px;
+    border-radius: 10px; 
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .form {
+        width: 90%; 
+    }
+
+    .imagen1, .imagen2 {
+        width: 100%;
+        height: auto; 
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar .nav-links {
+        gap: 8px;
+    }
+
+    .button {
+        width: 100%; 
+        font-size: 16px; 
+    }
+
+    .form {
+        padding: 15px; 
+    }
+
+    .imagen1, .imagen2 {
+        width: 100%;
+        height: auto; 
+    }
+}

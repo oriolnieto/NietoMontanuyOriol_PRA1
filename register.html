@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registre</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class = "register">
+    
+    <nav class="navbar">
+        <img class="logo" src="shoe.png">
+        <div class="nav-links">
+            <a href="main.html">Inici</a>
+            <a href="register.html">Registra't</a>
+            <a href="userlist.html">Llista d'Usuaris</a>
+        </div>
+    </nav>
+
+    <h1 class="label1">Registra't</h1>
+    <form class="form">
+        <label for="usuari">Nom d'usuari:</label> 
+        <input type="text" id="usuari" name="usuari" required>
+        
+        <br>
+        <label for="contrasenya">Contrasenya:</label> 
+        <input type="password" id="contrasenya" name ="contrasenya" maxlength="128" required>
+        <br>
+        
+        <label for="nom">Nom i Cognoms:</label> 
+        <input type="text" id="nom" name="nom" required>
+        <br>
+        
+        <label for="email">Correu Electrònic:</label> 
+        <input type="email" id="email" name ="email" required>
+        <br>
+        
+        <label for="descripcio">Descripció:</label>
+        <br>
+        <textarea id="descripcio" name="descripcio" rows="4" cols="35" required></textarea>
+        <br>
+        
+        <input class="button" type="submit" value="Desar">
+    </form>
+</body>
+</html>
